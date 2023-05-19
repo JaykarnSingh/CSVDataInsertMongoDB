@@ -16,7 +16,7 @@ fs.createReadStream('./csvLoginData.csv')
   });
 
   async function connectAndInsertData(jsonData) {
-    const uri = 'mongodb+srv://prashantsisodia08:prashant@cluster0.tz8imch.mongodb.net/ps';
+    const uri = 'mongodb+srv://<username>:<password>@cluster0.tz8imch.mongodb.net/ps';
     const client = new MongoClient(uri, { useNewUrlParser: true, useUnifiedTopology: true });
   
     try {
